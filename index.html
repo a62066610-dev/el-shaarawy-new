@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موقع المدرسة - الجداول</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+<header>
+<h1>موقع المدرسة</h1>
+<p>الجداول الدراسية - العرض فقط بدون تحميل</p>
+</header>
+
+<div class="top">
+<!-- زرار واحد بس -->
+<button class="btn-upload" id="uploadBtn" onclick="onUploadClick()">📤 رفع الجدول</button>
+<button class="btn-delete" id="deleteBtn" onclick="onDeleteClick()">🗑️ حذف الملف</button>
+<input type="file" id="fileInput" accept=".pdf" hidden>
+</div>
+<p id="status">في انتظار رفع الجدول من المدير</p>
+<div id="tables"><div class="empty">لا يوجد جدول معروض حالياً</div></div>
+
+<!-- نافذة الباسورد -->
+<div class="modal" id="loginModal">
+<div class="modal-box">
+<h3>اكتب باسورد المدير</h3>
+<p style="color:#666;font-size:14px">عشان ترفع الجدول لازم تكون المدير</p>
+<form onsubmit="checkPass(); return false;">
+<input type="password" id="passInput" placeholder="الباسورد" inputmode="numeric" autocomplete="off">
+<button type="submit">دخول ورفع</button>
+</form>
+<p id="err">الباسورد غلط</p>
+<button class="btn-cancel" onclick="closeLogin()">إلغاء</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
